@@ -1,0 +1,5 @@
+private void selectAllToolStripMenuItem_Click(object sender, EventArgs e)  
+{  
+    if (RichTextBox1.TextLength > 0)  
+        RichTextBox1.SelectAll();  
+}  

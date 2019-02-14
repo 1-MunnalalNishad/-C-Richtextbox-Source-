@@ -1,0 +1,5 @@
+if (dynamicRichTextBox.CanRedo == true)  
+{  
+    if (dynamicRichTextBox.RedoActionName != "Delete")  
+        dynamicRichTextBox.Redo();  
+}  

@@ -1,0 +1,16 @@
+private void LoadRTFButton_Click(object sender, EventArgs e)  
+{  
+    OpenFileDialog ofd = new OpenFileDialog();  
+    ofd.InitialDirectory = "c:\\";  
+    ofd.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";  
+    ofd.FilterIndex = 2;  
+    ofd.RestoreDirectory = true;  
+    if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)  
+    {  
+        dynamicRichTextBox.LoadFile(ofd.FileName);  
+        dynamicRichTextBox.Find("Text", RichTextBoxFinds.MatchCase);  
+        dynamicRichTextBox.SelectionFont = new Font("Verdana", 12, FontStyle.Bold);  
+        dynamicRichTextBox.SelectionColor = Color.Red;  
+        dynamicRichTextBox.SaveFile(@"C:\Junk\SavedRTF.rtf", RichTextBoxStreamType.RichText);  
+    }  
+}  

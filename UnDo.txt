@@ -1,0 +1,8 @@
+private void undoToolStripMenuItem_Click(object sender, EventArgs e)  
+{  
+    if (RichTextBox1.CanUndo)  
+    {  
+        RichTextBox1.Undo();  
+        RichTextBox1.ClearUndo();  
+    }             
+}  

@@ -1,0 +1,5 @@
+rivate void copyToolStripMenuItem_Click(object sender, EventArgs e)  
+{  
+        if (RichTextBox1.SelectionLength > 0)  
+            RichTextBox1.Copy();             
+}  

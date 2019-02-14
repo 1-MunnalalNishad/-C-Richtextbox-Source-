@@ -1,0 +1,7 @@
+private void pasteToolStripMenuItem_Click(object sender, EventArgs e)  
+{  
+    if (Clipboard.GetDataObject().GetDataPresent(DataFormats.Text))  
+    {  
+        RichTextBox1.Paste();  
+    }  
+}  

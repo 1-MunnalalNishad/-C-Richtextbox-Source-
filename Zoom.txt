@@ -1,0 +1,6 @@
+private void ZoomButton_Click(object sender, EventArgs e)  
+{  
+    dynamicRichTextBox.AutoWordSelection = true;  
+    dynamicRichTextBox.RightMargin = 5;  
+    dynamicRichTextBox.ZoomFactor = 3.0f;  
+}  
